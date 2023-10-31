@@ -10,4 +10,4 @@ for untracked_file in untracked_files:
     repo.git.commit(m=f"added: {untracked_file[0]}")
 origin = repo.remote(name="origin")
 print(origin.name)
-# origin.push()
+origin.push()
