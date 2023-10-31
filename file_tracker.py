@@ -1,9 +1,9 @@
-import os
+from pathlib import Path
 from git import Repo
 
 
-path = os.getenv("DIR")
-repo = Repo(path)
+path = Path()
+repo = Repo(path.absolute())
 untracked_files = [i.split()[1:] for i in repo.git.status("--porcelain").split("\n")]
 for untracked_file in untracked_files:
     repo.git.add(untracked_file[0])
