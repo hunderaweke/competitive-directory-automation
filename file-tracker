@@ -1,0 +1,2 @@
+#!/bin/bash
+python /home/hundera/Documents/projects/personal/competitive-directory-automation/file_tracker.py
